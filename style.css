@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width:100%;
+}
+.mainBody{
+    padding: 1.5rem 2.7rem;
+    background-color: black;
+    position: relative;
+    z-index: -2;
+    height: 100vh;
+
+}  
+.mainBody::before{
+    background-image: 
+    linear-gradient(transparent, rgba(0, 0, 0, 0.3),rgba(127, 40, 40, 0.8),rgba(217, 25, 25, 0.8)),
+    url(./assets/netflixbackground.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(16px);
+    opacity: 0.3;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    inset: 000;
+}
+
+.navBar{
+    display: flex;
+    height: 4rem;
+    padding-right: 1rem;
+}
+.navBarLeft{
+    width: 50%;
+}
+.netflixLogo{
+    height: 2.5rem  ;
+}
+.navBarRight{
+    width: 50%;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-end;
+    padding-bottom: 1rem ;
+}
+.navBarRight button{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.languageButton{
+    padding-top: 0.4rem;
+    border: 0.04rem solid rgb(132, 130, 130);
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    width: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.4rem;
+    padding-right: 0.6rem;
+}
+
+.languageButton img{  
+    height: 1.3rem; 
+    padding-bottom: 0.2rem;
+}
+
+.signinButton{
+    padding: 0.3rem 0.2rem;
+    width: 5.5rem;
+    margin: 0.4rem;
+    margin-left: 0.5rem;
+    border: 0.2rem solid white;
+    border-radius: 50px;
+}
+
+.movieBanner{
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./assets/netflixbackground.jpg);
+    border-radius: 20px;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 -50px 10px 10px rgba(101, 52, 52, 0.5);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.7),rgba(0,0,0, 0.8),rgba(0,0,0, 0.85),rgba(0,0,0, 0.85),rgba(32, 27, 27, 0.8));
+    border-radius: 20px;
+}
+.bannerText{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    position: absolute;
+    inset: 0;
+}
+.bannerText h1{
+    font-size: 3.4rem;
+}
+.bannerText h3{
+    margin: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.bannerText h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+.emailGet{
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.emailAddressButton{
+    width :50%;
+    border: 0.05rem solid rgba(160, 160, 160, 0.3);
+    height: 3.5rem;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(rgba(160, 160, 160, 0.3));
+}
+.getStartedButton{
+    width: 14rem;
+    height: 3.5rem;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: red;
+}
+
